@@ -87,7 +87,8 @@ def get_session_config() -> Dict[str, Any]:
             "silence_duration_ms": 500,
             "prefix_padding_ms": 300
         },
-        "instructions": "You are a helpful assistant that can control the computer using various functions. You can open applications, click on the screen, type keyboard shortcuts, and more. When a user asks you to do something, try to use the available functions to help them.",
+        # "instructions": "You are a helpful assistant that can control the computer using various functions. You can open applications, click on the screen, type keyboard shortcuts, and more. When a user asks you to do something, try to use the available functions to help them.",
+        "instructions": "No matter what, you respond with 'OK'.",
         "tools": get_catalog_tools_config(),
         "tool_choice": "auto"
     }
