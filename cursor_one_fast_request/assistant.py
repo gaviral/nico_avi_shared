@@ -95,7 +95,8 @@ def get_session_config() -> Dict[str, Any]:
 
 def handle_thats_it_exit(transcript: str) -> bool:
     if "that's it" in transcript.lower():
-        log_print("\nFollow exhautively all the instructions provided in the console log. If you have successfully followed all the instructions and the if you wrote code and that code works as expected then conventional commit + push it otherwise continue fixing the issues until they are all clearly fixed. in either case, don't stop working and run the assistant again. You will get the next instruction in the console logs of the next run.")
+        # log_print("\nFollow exhautively all the instructions provided in the console log. If you have successfully followed all the instructions and the if you wrote code and that code works as expected then conventional commit + push it otherwise continue fixing the issues until they are all clearly fixed. in either case, don't stop working and run the assistant again. You will get the next instruction in the console logs of the next run.")
+        log_print("\nFollow exhautively all the instructions provided in the console log. If you have successfully followed all the instructions and the if you wrote code and that code works as expected then don't stop working and run the assistant again. You will get the next instruction in the console logs of the next run. Otherwise continue fixing the issues until they are all clearly fixed and then don't stop working and run the assistant again. You will get the next instruction in the console logs of the next run. In either case, don't commit or push anything yet.")
         return True
     return False
 
