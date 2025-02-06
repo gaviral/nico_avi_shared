@@ -373,6 +373,9 @@ class Catalog:
     #     '''
     #     Catalog.run_apple_script(script)
 
+    # empty class for now
+    pass
+
 def get_catalog_functions() -> "list[str]":
     """Returns a list of all function names in the Catalog class.
     
